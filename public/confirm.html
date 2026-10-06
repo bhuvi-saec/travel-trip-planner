@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirm your trip | Travel Trip Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/confirm.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark">T</span><span>Travel Trip Planner<small>MAKE ROOM FOR WONDER</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="main-nav"><a href="/">Home</a><a href="/destinations.html">Destinations</a><a href="/destinations.html#plans">Plans</a><a href="/mytrips.html">My Trips</a><a href="/contact.html">Contact</a></nav><a class="header-cta" href="/destinations.html">Keep exploring <span>↗</span></a></header>
+  <main class="section-wrap page-section narrow-section"><div id="confirmation-area"><p class="eyebrow">ONE LAST LITTLE STEP</p><h1>Let's make it <em>official.</em></h1><div id="confirm-summary" class="summary-card"></div><p class="negotiate-prompt">Want to customize this package or discuss the price? <a class="text-link" href="/negotiate.html">Negotiate with the agency ↗</a></p><form id="confirm-form" class="form-card"><h2>Your traveler details</h2><p class="form-subtitle">We'll use these to keep you up to date.</p><div class="form-grid"><label>Your name<input name="name" required maxlength="100" autocomplete="name"></label><label>Email address<input name="email" type="email" required autocomplete="email"></label><label>Phone number<input name="phone" type="tel" required pattern="[+0-9() .-]{7,25}" title="Enter a valid phone number" autocomplete="tel"></label><label>Number of travelers<input name="travelers" type="number" required min="1" max="50" value="1"></label><label>Travel date<input name="travelDate" type="date" required></label><label>Final total (₹)<input name="finalPrice" type="number" required min="1" step="1"></label></div><div id="confirm-message" class="message hidden" role="status"></div><button class="button button-dark button-full" type="submit">Confirm my trip <span>↗</span></button></form></div><div id="trip-confirmed" class="hidden"></div></main>
+  <footer class="site-footer"><a class="brand brand-footer" href="/"><span class="brand-mark">T</span><span>Travel Trip Planner</span></a><span>Go a little further. Come back with a lot.</span><a href="/admin.html">Agency / Admin</a></footer>
+</body>
+</html>

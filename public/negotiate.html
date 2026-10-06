@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talk to the agency | Travel Trip Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
+  <script src="/js/negotiate.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark">T</span><span>Travel Trip Planner<small>MAKE ROOM FOR WONDER</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="main-nav"><a href="/">Home</a><a href="/destinations.html">Destinations</a><a class="active" href="/destinations.html#plans">Plans</a><a href="/mytrips.html">My Trips</a><a href="/contact.html">Contact</a></nav><a class="header-cta" href="/destinations.html">Explore <span>↗</span></a></header>
+  <main class="section-wrap page-section form-layout"><section class="form-intro"><p class="eyebrow">LET'S FIND A WAY</p><h1>Make this trip<br><em>work for you.</em></h1><p>Share what you have in mind. Our travel team will review your offer and requirements, and get in touch.</p><div id="negotiation-summary" class="summary-card"></div></section>
+    <form id="negotiation-form" class="form-card"><h2>Talk it through</h2><p class="form-subtitle">Tell us a little about your trip.</p>
+      <div class="form-grid"><label>Your name<input name="name" required maxlength="100" autocomplete="name"></label><label>Email address<input name="email" type="email" required autocomplete="email"></label><label>Phone number<input name="phone" type="tel" required pattern="[+0-9() .-]{7,25}" title="Enter a valid phone number" autocomplete="tel"></label><label>Number of travelers<input name="travelers" type="number" required min="1" max="50" value="1"></label><label>Preferred travel date<input name="travelDate" type="date" required></label><label>Your proposed total (₹)<input name="proposedPrice" type="number" required min="1" step="1"></label></div>
+      <label>Anything else we should know?<textarea name="message" rows="4" maxlength="2000" placeholder="Special requests, preferences, or questions…"></textarea></label><div id="negotiation-message" class="message hidden" role="status"></div><button class="button button-dark button-full" type="submit">Send my request <span>↗</span></button>
+    </form>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="/"><span class="brand-mark">T</span><span>Travel Trip Planner</span></a><span>Go a little further. Come back with a lot.</span><a href="/admin.html">Agency / Admin</a></footer>
+</body>
+</html>
